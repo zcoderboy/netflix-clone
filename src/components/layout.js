@@ -9,7 +9,7 @@ const Layout = ({children}) => {
     <>
       <Helmet>
         <html lang="en"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
         <title>{title}</title>
         <meta name="description" content={description} />
       </Helmet>
@@ -20,7 +20,7 @@ const Layout = ({children}) => {
               margin: 0;
             }
             * + * {
-              margin-top: 1rem;
+              margin-top: 0.5rem;
             }
 
             html,
@@ -61,6 +61,7 @@ const Layout = ({children}) => {
       <main css={css`
         margin: 0 auto;
         max-width: 80vw;
+        height: 100vh;
       `}>{children}</main>
     </>
   )
