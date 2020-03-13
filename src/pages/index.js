@@ -40,12 +40,11 @@ const Index = () => {
           <h2>Ready? Let's get you signed up</h2>
         </div>
         <div className="d-flex flex-column p-3" css={css`
-            ${'' /* background-color: #b81d25; */}
             border-radius: 15px;
             flex-basis:40%;
             *+*{
-              margin-top:1.5rem
-            
+              margin-top:1.5rem;
+            }
         `
         }>
         <form onSubmit={formik.handleSubmit}>
